@@ -32,6 +32,7 @@ import {
   User,
   MousePointer2,
   ImageIcon,
+  BookOpen,
 } from "lucide-react"
 import { useSidebar } from "./sidebar-context"
 
@@ -55,6 +56,7 @@ const getClientNavItems = (slug: string) => [
   { href: `/dashboards/${slug}/mapa`, label: "Mapa da Operação", icon: Map },
   { href: `/dashboards/${slug}/acessos`, label: "Acessos", icon: Key },
   { href: `/dashboards/${slug}/avisos`, label: "Avisos", icon: Bell },
+  { href: `/dashboards/${slug}/leitura-semanal`, label: "Leitura Semanal", icon: BookOpen },
   { href: `/dashboards/${slug}/materiais`, label: "Materiais", icon: FolderOpen },
   { href: `/dashboards/${slug}/perfil`, label: "Perfil", icon: User },
 ]
@@ -66,6 +68,7 @@ const adminNavItems = [
   { href: "/admin/mapa", label: "Mapa da Operação", icon: Map },
   { href: "/admin/acessos", label: "Acessos", icon: Key },
   { href: "/admin/avisos", label: "Avisos", icon: Bell },
+  { href: "/admin/leitura-semanal", label: "Leitura Semanal", icon: BookOpen },
   { href: "/admin/botoes", label: "Botões", icon: MousePointer2 },
   { href: "/admin/icones", label: "Ícones", icon: ImageIcon },
   { href: "/admin/configuracoes", label: "Configurações", icon: Settings },
